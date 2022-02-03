@@ -3,7 +3,7 @@ PREFIX=/usr/local
 BINDIR=$(PREFIX)/bin
 MANDIR=$(PREFIX)/share/man
 
-PROG=	m4
+PROG=	qm4
 
 ifdef DEBUG
 	CFLAGS+=-DDEBUG -g
@@ -18,9 +18,9 @@ clean:
 	rm -f $(PROG) $(OBJS)
 
 install-bin:
-	install -D m4 $(DESTDIR)$(BINDIR)/m4
+	install -D qm4 $(DESTDIR)$(BINDIR)/qm4
 
 install-man:
-	install -D m4.1 $(DESTDIR)$(MANDIR)/man1/m4.1
+	install -D m4.1 $(DESTDIR)$(MANDIR)/man1/qm4.1
 
 install: install-bin install-man

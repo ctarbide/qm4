@@ -1,3 +1,19 @@
+
+C. Tarbide <ctarbide@tuta.io> - February 2022
+
+This fork starts from [1], I intend to incorporate improvements from
+[2].
+
+Quasar M4 is available under the same BSD license as the BSD M4 from
+which it is derived. And so is any of the changes incoporated by this
+fork.
+
+- [1]: http://haddonthethird.net/m4/m4-2.tar.bz2
+- [2]: http://haddonthethird.net/m4/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 William Haddon <william@haddonthethird.net> - January 2015
 
 This is a port of FreeBSD's implementation of m4. The code is much simpler and
