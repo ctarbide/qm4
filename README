@@ -4,6 +4,12 @@ C. Tarbide <ctarbide@tuta.io> - February 2022
 This fork starts from [1], I intend to incorporate improvements from
 [2].
 
+To clean, build and install, all in one go, issue:
+
+    make PREFIX="${HOME}/local" CC=gcc CFLAGS=-Wall clean qm4 install
+
+Append "-DDEBUG -g" to CFLAGS to debug.
+
 Quasar M4 is available under the same BSD license as the BSD M4 from
 which it is derived. And so is any of the changes incoporated by this
 fork.
