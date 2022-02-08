@@ -104,7 +104,6 @@ static int unary(int mayeval);
 static int factor(int mayeval);
 static int constant(int mayeval);
 static int num(int mayeval);
-static int geteqrel(int mayeval);
 static int skipws(void);
 static void experr(const char *);
 
@@ -578,6 +577,7 @@ num(int mayeval)
 				break;
 			case 'A': case 'B': case 'C': case 'D': case 'E': case 'F':
 				c = tolower(c);
+				/*FALLTHRU*/
 			case 'a': case 'b': case 'c': case 'd': case 'e': case 'f':
 				if (base == HEX) {
 					rval *= base;
